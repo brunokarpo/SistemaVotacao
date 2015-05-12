@@ -12,16 +12,14 @@ Fiz a seguinte proposta de exercício:
 1. O software da urna, que registra os votos de cada eleitor em uma base de dados interna durante o período de votação;
 2. O software que contabiliza os votos no final de uma votação;
 
-Nesse cenário, ao final do período de votação o software da URNA gera um relatório contendo os registros de todos os votos feitos ali. Cada voto segue o seguinte padrão e o relatório possui várias linhas contendo essa informação;
-
----------------------------------------------------------------------
-Deputado_Federal;"Nome Candidato";"Número Candidato";"Sigla Partido"
-Deputado_Estadual;"Nome Candidato";"Número Candidato";"Sigla Partido"
-Senador;"Nome Candidato";"Número Candidato";"Sigla Partido"
-Governador;"Nome Candidato";"Número Candidato";"Sigla Partido"
-Presidente;"Nome Candidato";"Número Candidato";"Sigla Partido"
----------------------------------------------------------------------
-
+Nesse cenário, ao final do período de votação o software da URNA gera um relatório contendo os registros de todos os votos feitos ali. Cada voto segue o seguinte padrão e o relatório possui várias linhas contendo essa informação;  
+  
+Deputado_Federal;"Nome Candidato";"Número Candidato";"Sigla Partido"  
+Deputado_Estadual;"Nome Candidato";"Número Candidato";"Sigla Partido"  
+Senador;"Nome Candidato";"Número Candidato";"Sigla Partido"  
+Governador;"Nome Candidato";"Número Candidato";"Sigla Partido"  
+Presidente;"Nome Candidato";"Número Candidato";"Sigla Partido"  
+  
 A proposta do trabalho é: dado um arquivo contendo todos os registros de votos em uma urna, criar um software que contabilize todos os votos e informe quais os candidatos mais votados em cada cargo político, sendo que serão eleitos 5 Deputados Federais, 5 Deputados Estaduais, 2 Senadores, 1 Governador e 1 Presidente"
 
 /*********************************************************************************************************************/
