@@ -1,4 +1,11 @@
-package br.ufg.si.poo.sistemaVotacao.candidatos;
+package br.ufg.si.poo.sistemaVotacao.geradorAutomatico;
+
+import br.ufg.si.poo.sistemaVotacao.candidatos.DeputadosEstaduais;
+import br.ufg.si.poo.sistemaVotacao.candidatos.DeputadosFederais;
+import br.ufg.si.poo.sistemaVotacao.candidatos.Governadores;
+import br.ufg.si.poo.sistemaVotacao.candidatos.Presidentes;
+import br.ufg.si.poo.sistemaVotacao.candidatos.Senadores;
+
 /**
  * @author Bruno Nogueira<br>
  *
