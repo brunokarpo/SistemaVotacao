@@ -7,7 +7,12 @@ import br.ufg.si.poo.sistemaVotacao.candidatos.DeputadosFederais;
 import br.ufg.si.poo.sistemaVotacao.candidatos.Governadores;
 import br.ufg.si.poo.sistemaVotacao.candidatos.Presidentes;
 import br.ufg.si.poo.sistemaVotacao.candidatos.Senadores;
-
+/**
+ * @author Bruno Nogueira<br>
+ *
+ * <p>Classe responsável por implementar o serviço disponibilizado pela interface {@link IGerarVotos};
+ *
+ */
 public class GeradorVotosImpl implements IGeradorVotos{
 
 	private Random random = new Random();
