@@ -45,7 +45,7 @@ public class ManipuladorArquivoImpl implements IManipuladorArquivo {
 			arquivo.createNewFile();
 			LOG.debug("Arquivo criado em " + arquivo.getAbsolutePath());
 		}
-		FileWriter file = new FileWriter(arquivo);
+		FileWriter file = new FileWriter(arquivo, true);
 		return file;
 
 	}
