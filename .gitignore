@@ -17,3 +17,6 @@ hs_err_pid*
 
 # Nao ignorar o .gitignore
 !.gitignore
+
+# Ignorar a pasta target
+**/target/
