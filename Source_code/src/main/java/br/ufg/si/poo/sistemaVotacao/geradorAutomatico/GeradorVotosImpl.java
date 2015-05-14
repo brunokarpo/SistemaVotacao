@@ -2,6 +2,9 @@ package br.ufg.si.poo.sistemaVotacao.geradorAutomatico;
 
 import java.util.Random;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import br.ufg.si.poo.sistemaVotacao.candidatos.DeputadosEstaduais;
 import br.ufg.si.poo.sistemaVotacao.candidatos.DeputadosFederais;
 import br.ufg.si.poo.sistemaVotacao.candidatos.Governadores;
@@ -15,11 +18,13 @@ import br.ufg.si.poo.sistemaVotacao.candidatos.Senadores;
  */
 public class GeradorVotosImpl implements IGeradorVotos{
 
+	private static final Logger LOG = LoggerFactory.getLogger(GeradorVotosImpl.class);
 	private Random random = new Random();
 
 	public VotoPojo gerarVoto() {
-
+		LOG.info("Gerando um novo voto");
 		VotoPojo voto = new VotoPojo(gerarDeputadoFederal(), gerarDeputadoEstadual(), gerarSenador(), gerarGovernadores(), gerarPresidentes());
+		LOG.debug("Voto gerado: " + voto);
 
 		return voto;
 	}

@@ -1,7 +1,11 @@
 package br.ufg.si.poo.sistemaVotacao.filaProcessamento;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 public class FilaFactory {
 
+	private static final Logger LOG = LoggerFactory.getLogger(FilaFactory.class);
 	private static FilaFactory filaFactory;
 
 	private IFilaProcessamento fila;
@@ -15,7 +19,9 @@ public class FilaFactory {
 
 	public static FilaFactory getFilaFactory() {
 		if(filaFactory == null) {
+			LOG.info("Criando fábrica de fila");
 			filaFactory = new FilaFactory();
+			LOG.info("Fábrica de fila criada");
 		}
 		return filaFactory;
 	}
