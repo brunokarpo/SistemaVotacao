@@ -69,5 +69,18 @@ public class VotoPojo {
 		return presidente;
 	}
 
+	public String toString() {
+		StringBuilder sb = new StringBuilder();
+		sb.append("Deputado Federal;" + getDeputadoFederal() + "\n");
+		sb.append("Deputado Estadual;" + getDeputadoEstadual() + "\n");
+		sb.append("Senador;" + getSenador() + "\n");
+		sb.append("Governador;" + getGovernador() + "\n");
+		sb.append("Presidente;" + getPresidente() + "\n");
+		sb.append("\n");
+
+		return sb.toString();
+
+	}
+
 
 }
