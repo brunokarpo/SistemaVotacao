@@ -10,7 +10,7 @@ import br.ufg.si.poo.sistemaVotacao.geradorAutomatico.IGeradorVotos;
 class ThreadGerarVotos implements Runnable {
 
 	private static final Logger LOG = LoggerFactory.getLogger(ThreadGerarVotos.class);
-	private static int VOTOS = 250;
+	private static int VOTOS = 2000;
 
 	private IFilaProcessamento fila;
 
