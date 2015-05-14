@@ -20,3 +20,7 @@ hs_err_pid*
 
 # Ignorar a pasta target
 **/target/
+
+# Ignorando arquivos de log e texto
+*.log
+*.txt
